@@ -1,5 +1,8 @@
 module LinearWaves
 
-# Write your package code here.
+export wave_profile
+
+include("constants.jl")
+include("regularwaves.jl")
 
 end
