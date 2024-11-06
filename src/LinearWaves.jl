@@ -15,7 +15,11 @@ export horizontal_displacement, vertical_displacement, pressure
 export wave_profile_s, horizontal_velocity_s, vertical_velocity_s
 export horizontal_displacement_s, vertical_displacement_s, pressure_s
 
+## wave processes
+export dispersion_relation
+
 include("constants.jl")
 include("regularwaves.jl")
+include("processes.jl")
 
 end
