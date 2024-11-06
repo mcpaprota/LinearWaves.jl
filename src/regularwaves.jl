@@ -150,7 +150,7 @@ a regular standing wave of amplitude `a`, wave number `k`, and angular wave freq
 propagating at constant depth `d`.
 """
 function pressure_s(x::Real, z::Real, t::Real, a::Real, k::Real, ω::Real, d::Real)
-    η(x, t) = wave_profile(x, t, a, k, ω)
+    η(x, t) = wave_profile_s(x, t, a, k, ω)
     K(z) = cosh(k * (z + d)) / cosh(k * d) # pressure response factor
     if z > 0
         p = ρ * g * (η(x, t) - z) # above still water level

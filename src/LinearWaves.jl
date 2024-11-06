@@ -9,11 +9,11 @@ module LinearWaves
 
 ## regular progressive waves
 export wave_profile, horizontal_velocity, vertical_velocity
-export horizontal_displacement, vertical_displacement
+export horizontal_displacement, vertical_displacement, pressure
 
 ## regular standing waves
 export wave_profile_s, horizontal_velocity_s, vertical_velocity_s
-export horizontal_displacement_s, vertical_displacement_s
+export horizontal_displacement_s, vertical_displacement_s, pressure_s
 
 include("constants.jl")
 include("regularwaves.jl")
