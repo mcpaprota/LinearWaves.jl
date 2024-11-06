@@ -7,6 +7,8 @@ LinearWaves is an implementation of a linear water wave theory.
 """
 module LinearWaves
 
+using NonlinearSolve
+
 ## regular progressive waves
 export wave_profile, horizontal_velocity, vertical_velocity
 export horizontal_displacement, vertical_displacement, pressure

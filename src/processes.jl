@@ -2,9 +2,7 @@
 
 # wave processes
 
-using NonlinearSolve
-
-# dispersion
+## dispersion
 
 """
     dispertion_relation(d, ω; g=LinearWaves.g, ϵ=LinearWaves.tol)
