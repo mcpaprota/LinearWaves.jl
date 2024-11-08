@@ -18,10 +18,11 @@ export wave_profile_s, horizontal_velocity_s, vertical_velocity_s
 export horizontal_displacement_s, vertical_displacement_s, pressure_s
 
 ## wave processes
-export dispersion_relation, phase_velocity, group_velocity
+export wave_number, wave_length, wave_frequency, wave_period
+export phase_velocity, group_velocity
 
 include("constants.jl")
 include("regularwaves.jl")
-include("processes.jl")
+include("parameters.jl")
 
 end

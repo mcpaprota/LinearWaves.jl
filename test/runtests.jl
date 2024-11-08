@@ -48,17 +48,17 @@ using Test
     @test abs(p_s(π / 2, -d, 1) - p_s(3π / 2, -d, 1)) < ϵ * g * ρ
     ## wave processes
     ω, d = 2π, 1
-    k = dispersion_relation(d, ω)
+    k = wave_number(d, ω)
     ### dispersion
-    @test abs(ω - sqrt(g * k * tanh(k * d))) < ϵ
+    @test abs(ω - wave_frequency(d, k)) < ϵ
     #### deep water
     d = 10^15
-    k = dispersion_relation(d, ω)
+    k = wave_number(d, ω)
     c = phase_velocity(k, ω)
     @test c == g / ω
     #### shallow water
     d = 0.00000000001
-    k = dispersion_relation(d, ω)
+    k = wave_number(d, ω)
     c = phase_velocity(k, ω)
     @test abs(c - sqrt(g * d)) < ϵ
 end
